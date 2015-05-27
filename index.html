@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body> 
+		<link rel="stylesheet" href="css/index.css">
+		<header>
+     <div class="collapse navbar-collapse">
+    <div class="logo">Michael Cerezo</div>
+    <nav role='navigation'>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" data-toggle="modal">Contact Us</a></li>
+      </ul>
+    </nav>  
+  </div>
+</header>
+<div id="page0">
+    <a id="home"></a>
+    </div>
+<div id="page1">
+		<a id="about"></a>
+    	About page content goes here.
+    </div>
+    <div id="page2">
+      <a id="projects"></a>
+      <div id="b">
+        <div class="flip-container">
+          <div class="flipper">
+            <div class="front">
+              <img class="teamlogo" onclick="document.querySelector('#flip-toggle').classList.toggle('flip');" src="images/m.jpg"/>
+            </div>
+            <a href="../michaelapi/index.php">
+              <div class="back">
+                Back of div content
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="flip-container">
+          <div class="flipper">
+            <div class="front">
+              <img class="teamlogo" onclick="document.querySelector('#flip-toggle').classList.toggle('flip');" src="images/n.png"/>
+            </div>
+            <a href="../todo-list2.0/index.php">
+              <div class="back">
+                Back of div content
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="flip-container">
+          <div class="flipper">
+            <div class="front">
+              <img class="teamlogo" onclick="document.querySelector('#flip-toggle').classList.toggle('flip');" src="images/o.png"/>
+            </div>
+            <a href="../Awesomenauts/index.php">
+              <div class="back">
+                Back of div content
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+<!-- Contact Modal -->
+    <div class="modal fade" id="contact" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form class="form-horizontal">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Contact Me</h4>
+            </div>
+            <div class="modal-body">
+
+              <div class="form-group">
+                <label for="contact-name" class="col-md-2 control-label">Name:</label>
+                <div class="col-md-10">
+                  <input type="text" class="form-control" id="contact-name" placeholder="Full Name"></input>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="col-md-2 control-label">Email:</label>
+                <div class="col-md-10">
+                  <input type="email" class="form-control" id="contact-email" placeholder="you@example.com"></input>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="col-md-2 control-label">Message:</label>
+                <div class="col-md-10">
+                  <textarea class="form-control" rows="6"></textarea>
+                </div>
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Send Message</button>
+            </div>
+          </form>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <!-- End Contact Modal -->
+	</body>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="http://code.jquery.com/jquery-[latest].min.js"></script>
+  <script src="jquery.flip.js"></script>
+</html>
