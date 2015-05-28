@@ -117,7 +117,7 @@ section .inner {
 }
 
 #b{
-  padding-top: 200px;
+  padding-top: 200px; 
 }
 
 #page0 {
@@ -136,7 +136,8 @@ section .inner {
   height:1100px;
   width:1000px;
   padding-top:150px;
-  }
+  margin-left: 125px;
+}
   
 .page-padding {height:90px; width:100%;}
 
@@ -153,6 +154,7 @@ padding-left: 5%;
 /* entire container, keeps perspective */
 .flip-container {
 perspective: 1000;
+float: right;
 }
 
 /* flip the pane when hovered */
